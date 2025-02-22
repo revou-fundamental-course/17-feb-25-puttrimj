@@ -69,7 +69,7 @@ main > header{
     height: 100px;
     align-content: center;
     text-align: center;
-    background-color: pink;
+    background-color: rgb(243, 200, 221);
 }
 
 .our-packages-content{
@@ -81,7 +81,7 @@ main > header{
     height: 100px;
     align-content: center;
     text-align: center;
-    background-color: palevioletred;
+    background-color: rgb(209, 131, 169);
 }
 
 .call-us-content{
