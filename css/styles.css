@@ -1,1 +1,94 @@
 /* Ini CSS External */
+
+body{
+    font-family: cursive;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-company{
+    height: 60px;
+    width: 60px;
+    background-image: url(https://img.freepik.com/premium-vector/pink-letter-p-logo-with-speech-bubble-middle-initial-logo_555017-724.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+}
+
+nav > a {
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.no-border-radius{
+    border-radius: 0px;
+}
+
+.no-border-radius-right{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 4px;
+}
+
+.no-border-radius-left{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+}
+
+main > header{
+    text-align: center;
+}
+
+.main-content{
+    display: flex;
+    gap: 20px;
+}
+
+.main-container{
+    border: 1px solid;
+    height: 500px;
+    flex: 1;
+    align-content: center;
+    text-align: center;
+}
+
+#our-packages-section > header{
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: pink;
+}
+
+.our-packages-content{
+    border: 1px solid;
+    height: 300px;
+}
+
+#call-us-section > header{
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+.call-us-content{
+    border: 1px solid;
+    height: 300px;
+}
+
+footer{
+    text-align: center;
+}
