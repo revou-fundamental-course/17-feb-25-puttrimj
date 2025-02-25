@@ -20,6 +20,7 @@ body{
 
 nav{
     display: flex;
+    box-shadow: 0 0 10px gray;
 }
 
 nav > a {
@@ -73,8 +74,31 @@ main > header{
 }
 
 .our-packages-content{
-    border: 1px solid;
-    height: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between; 
+    text-align: left;
+    padding: 20px; 
+    margin: 0 auto; 
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.package{
+    margin: 0 10px;
+    padding: 10px;
+    flex-basis: 30%;
+}
+
+.package img {
+    width: 100px;
+    height: 100px;
+}
+
+.package-container {
+    display: flex;
+    flex-direction: column; /* Mengatur arah elemen menjadi kolom */
+    align-items: center;
 }
 
 #call-us-section > header{
