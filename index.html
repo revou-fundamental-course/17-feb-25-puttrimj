@@ -41,8 +41,37 @@
 
             <!--Form Contact Us-->
             <aside class="main-container">
-                <p>ini form contact us</p>
+                <h2>Contact Us</h2>
+                <p>Kami akan menghubungi Anda dalam 1x24 jam setelah data kami terima.</p>
+                <form id="message-form">
+                    Nama: <input type="text" name="full-name" placeholder="Nama Lengkap">
+                    <span id="error-name"></span><br>
+                
+                    Email Address:<input type="email" name="email" placeholder="Email">
+                    <span id="error-email"></span><br>
+                
+                    Nomor Telepon:<input type="text" name="nomor-telepon" placeholder="Nomor Telepon">
+                    <span id="error-nomor-telepon"></span><br>
+                
+                    Tanggal Lahir:<input type="date" name="birth-date">
+                    <span id="error-birth-date"></span><br>
+                
+                    Jenis Kelamin: <select name="gender">
+                        <option value="">Pilih Gender</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                    <span id="error-gender"></span><br>
+                
+                    Pesan: <textarea name="messages" placeholder="Pesan"></textarea>
+                    <span id="error-messages"></span><br>
+                
+                    <button type="submit">Kirim</button>
+                    
+                <script src="js\script.js"></script>
+                </form>
             </aside>
+        
         </section>
 
         <!--Our Packages Section-->
@@ -75,7 +104,7 @@
             <article class="our-packages-content">
                 <div class="package">
                     <img src="https://i.pinimg.com/736x/9b/bb/95/9bbb9528a46b408c779b280e8f9b92ce.jpg" alt=" Strawberry Cupcake">
-                    <h3>Strawberry Cupcake</h3>
+                    <h3>Cupcake</h3>
                     <hr>
                     <p>Light and fluffy cupcakes with a sweetness of fresh strawberry, perfect for fruit lovers!</p>
                 </div>
@@ -104,9 +133,15 @@
 
             <!--Content Call Us-->
             <article class="call-us-content">
-                <p>Lorem Ipsum...</p>
+                <h2>Discover Delight in Every Bite</h2>
+                <p>Treat yourself to our delectable cakes, crafted with premium ingredients and a touch of love.</p>  
+                <p>Order now and taste the difference!</p>  
+                <button class="cta-button">
+                    <a href="#">Click Here!</a>
+                </button>
             </article>
         </section>
+        <hr>
     </main>
 
     <!-- Footer -->

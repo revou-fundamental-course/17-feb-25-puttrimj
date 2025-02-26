@@ -56,17 +56,43 @@ main > header{
 .main-content{
     display: flex;
     gap: 20px;
+    margin: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
 }
 
 .main-container{
     border: 1px solid;
     height: 500px;
     flex: 1;
+    align-content: flex-start;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
     align-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.message-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
 }
 
 #our-packages-section > header{
+    margin: 10px;
     height: 100px;
     align-content: center;
     text-align: center;
@@ -79,7 +105,6 @@ main > header{
     justify-content: space-between; 
     text-align: left;
     padding: 20px; 
-    margin: 0 auto; 
     max-width: 1200px;
     gap: 20px;
 }
@@ -105,12 +130,28 @@ main > header{
     height: 100px;
     align-content: center;
     text-align: center;
-    background-color: rgb(209, 131, 169);
+    margin: 10px;
+    background-color: rgb(243, 200, 221);
 }
 
 .call-us-content{
+    margin: 10px;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-button{
     border: 1px solid;
-    height: 300px;
+    padding: 8px;
+    width: 600px;
+    background-color: white;
+    border-radius: 4px;
+    color: deeppink;
+}
+
+.cta-button > a{
+    color: deeppink;
+    text-decoration: none
 }
 
 footer{
