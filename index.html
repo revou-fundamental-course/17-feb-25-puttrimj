@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project RevoU Putri Mujaningsih</title>
-
+    <title>Dip n Bites</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css\styles.css">
 </head>
@@ -13,9 +12,7 @@
     <!-- Header & Navigation -->
     <header class="main-header">
         <!-- Logo -->
-        <div class="logo-company">
-
-        </div>
+        <div class="logo-company"></div>
 
         <nav>
             <a href="#" class="no-border-radius-right">Home</a>
@@ -34,44 +31,13 @@
 
         <section class="main-content">
             <!--Banner Autoslide-->
-            <aside class="main-container">
-                <p>Ini banner autoslide</p>
-            
+            <aside class="main-banner-container">
+                <div class="main-banner"></div>
+                    <div class="main-banner banner-img-1"></div>
+                    <div class="main-banner banner-img-2"></div>
+                    <div class="main-banner banner-img-3"></div>
+                </div>
             </aside>
-
-            <!--Form Contact Us-->
-            <aside class="main-container">
-                <h2>Contact Us</h2>
-                <p>Kami akan menghubungi Anda dalam 1x24 jam setelah data kami terima.</p>
-                <form id="message-form">
-                    Nama: <input type="text" name="full-name" placeholder="Nama Lengkap">
-                    <span id="error-name"></span><br>
-                
-                    Email Address:<input type="email" name="email" placeholder="Email">
-                    <span id="error-email"></span><br>
-                
-                    Nomor Telepon:<input type="text" name="nomor-telepon" placeholder="Nomor Telepon">
-                    <span id="error-nomor-telepon"></span><br>
-                
-                    Tanggal Lahir:<input type="date" name="birth-date">
-                    <span id="error-birth-date"></span><br>
-                
-                    Jenis Kelamin: <select name="gender">
-                        <option value="">Pilih Gender</option>
-                        <option value="Laki-laki">Laki-laki</option>
-                        <option value="Perempuan">Perempuan</option>
-                    </select>
-                    <span id="error-gender"></span><br>
-                
-                    Pesan: <textarea name="messages" placeholder="Pesan"></textarea>
-                    <span id="error-messages"></span><br>
-                
-                    <button type="submit">Kirim</button>
-                    
-                <script src="js\script.js"></script>
-                </form>
-            </aside>
-        
         </section>
 
         <!--Our Packages Section-->
@@ -96,7 +62,7 @@
                 </div>
                 <div class="package">
                     <img src="https://i.pinimg.com/736x/85/8e/c3/858ec399e0ced43160bdb169cbf774a8.jpg" alt="Donut">
-                    <h3>Glazed Donut</h3>
+                    <h3>Donut</h3>
                     <hr>
                     <p>Soft and fluffy donuts coated with a sweet glaze for a delighful bite every time.</p>
                 </div>
@@ -120,25 +86,42 @@
                     <hr>
                     <p>Crispy outside, fluffy inside! Served with a variety of delicious toppings of your choice.</p>
                 </div>
-
             </article>
+        </section> 
 
-        </section>
-
-        <!--Call Us Section-->
+            <!--Content Call Us-->
         <section id="call-us-section">
             <header>
                 <h2>Contact Us</h2>
             </header> 
-
-            <!--Content Call Us-->
+            
             <article class="call-us-content">
-                <h2>Discover Delight in Every Bite</h2>
-                <p>Treat yourself to our delectable cakes, crafted with premium ingredients and a touch of love.</p>  
-                <p>Order now and taste the difference!</p>  
-                <button class="cta-button">
-                    <a href="#">Click Here!</a>
-                </button>
+                <p>Discover Delight in Every Bite<br>
+                    Treat yourself to our delectable cakes, crafted with premium ingredients and a touch of love. <br> 
+                    Order now and taste the difference!
+                </p>
+            
+                <form id="message-form" name="message-form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="full-name">Nama:</label>
+                        <input id="full-name" placeholder="Nama Lengkap" type="text" name="full-name" required>
+                        <span id="error-name" class="error-message"></span>
+                    </div>                    
+            
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" placeholder="Email Address" type="email" name="email" required>
+                        <span id="error-email" class="error-message"></span>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" placeholder="Pesan" name="message" required></textarea>
+                        <span id="error-message" class="error-message"></span>
+                    </div>
+            
+                    <button type="submit">Kirim</button>
+                </form>
             </article>
         </section>
         <hr>
@@ -148,5 +131,8 @@
     <footer>
         <p>Made by @puttrimj</p>
     </footer>
+
+    <!--Javascript-->
+    <script src="js/script.js"></script>
 </body>
 </html>
