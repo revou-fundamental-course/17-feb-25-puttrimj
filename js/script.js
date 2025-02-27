@@ -63,7 +63,7 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     if (messages === "") {
         document.getElementById("error-message").innerHTML = "Pesan tidak boleh kosong";
         isValid = false;
-    }
+    } 
 
     if (!isValid) return; 
     form.submit();
